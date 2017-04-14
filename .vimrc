@@ -1,29 +1,37 @@
-set nocompatible               " be iMproved
-filetype off
-
-
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim
+if &compatible
+  set nocompatible               " Be iMproved
 endif
-call neobundle#begin(expand('~/.vim/bundle')) 
-"" originalrepos on github
-"NeoBundle 'Shougo/neobundle.vim'
-"NeoBundle 'Shougo/vimproc'
-"NeoBundle 'VimClojure'
-"NeoBundle 'Shougo/vimshell'
-"NeoBundle 'Shougo/unite.vim'
-"NeoBundle 'Shougo/neocomplcache'
-"NeoBundle 'Shougo/neosnippet'
-"NeoBundle 'jpalardy/vim-slime'
-"NeoBundle 'scrooloose/syntastic'
-"""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
-""NeoBundle 'https://github.com/Shougo/neocomplcache.git'
-""NeoBundle 'https://github.com/Shougo/neocomplcache-clang_complete.git'
-"NeoBundle 'Shougo/neocomplcache-clang_complete.git'
-NeoBundle 'Rip-Rip/clang_complete.git'
-NeoBundle 'Shougo/neocomplete.git'
-call neobundle#end() 
 
+" Required:
+set runtimepath+=/home/kasai/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/home/kasai/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neocomplete'
+NeoBundle 'Shougo/neosnippet'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'ctrlpvim/ctrlp.vim'
+NeoBundle 'flazz/vim-colorschemes'
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
 NeoBundleCheck
 
 let g:clang_periodic_quickfix = 0
