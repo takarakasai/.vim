@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/kasai/work/smrpkg_verify/smrpkg_trans/motion-tester'
+let g:netrw_dirhist_2='/home/kasai/work/smrpkg_verify/smrpkg_trans'
+let g:netrw_dirhist_3='/home/kasai/work/smrpkg_verify/smrpkg_trans/motion-tester/src/controller/viewc'
+let g:netrw_dirhist_4='/etc/network'
+let g:netrw_dirhist_5='/var/lib/tftpboot/ubuntu-installer/amd64/pxelinux.cfg'

@@ -1,0 +1,2 @@
+3.0
+{'neocomplete': {'checked_time': 1477293527, 'installed_uri': 'https://github.com/Shougo/neocomplete.git', 'installed_path': '/home/kasai/.vim/bundle/neocomplete', 'revisions': {'1476803107': '4bf7526a1c8cca9f8614e8a09178f334eaca0481'}, 'updated_time': '1476803107'}, 'clang_complete': {'checked_time': 1477293527, 'installed_uri': 'https://github.com/Rip-Rip/clang_complete.git', 'installed_path': '/home/kasai/.vim/bundle/clang_complete', 'revisions': {'1474792708': 'e536ca69f275a1c615550fc4aada5e320802262a'}, 'updated_time': '1474792708'}}
